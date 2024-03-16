@@ -7,12 +7,12 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Calendar;
 
-public class StartDockerTest {
+public class StopDockerTest {
 
-    public void startBatFile() throws IOException, InterruptedException {
+    public void stopBatFile() throws IOException, InterruptedException {
         boolean flag = false;
         Runtime runtime = Runtime.getRuntime();
-        runtime.exec("cmd /c start docker-up.bat");
+        runtime.exec("cmd /c start docker-down.bat");
 
         String fileOutput = "output.txt";
         Calendar calendar = Calendar.getInstance();
@@ -27,8 +27,8 @@ public class StartDockerTest {
             BufferedReader reader = new BufferedReader(new FileReader(fileOutput));
             String currentLine = reader.readLine();
             while (currentLine != null && !flag) {
-                if (currentLine.contains("Node has been added")) {
-                    System.out.println("Found the text about node in output file");
+                if (currentLine.contains("stopped: selenium-node")) {
+                    System.out.println("Found the text about stopping the node in output file");
                     flag = true;
                     break;
                 }
@@ -36,8 +36,8 @@ public class StartDockerTest {
             }
             reader.close();
         }
+
         Assert.assertTrue(flag);
-        runtime.exec("cmd /c start scale.bat");
-        Thread.sleep(15000);
     }
 }
+

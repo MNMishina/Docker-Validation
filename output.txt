@@ -1,0 +1,707 @@
+failed to get console mode for stdout: The handle is invalid.
+[1A[1B[0G[?25l[+] Running 0/0
+ - Network docker-validation_default  Creating 0.1s
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ - Network docker-validation_default  Creating 0.2s
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ - Network docker-validation_default  Creating 0.3s
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ - Network docker-validation_default  Creating 0.4s
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ - Network docker-validation_default  Creating 0.5s
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ - Network docker-validation_default  Creating 0.6s
+[?25h[1A[1A[0G[?25l[34m[+] Running 1/1[0m
+ - Network docker-validation_default  Created 0.7s
+ - Container selenium-hub             Creating 0.0s
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ - Network docker-validation_default  Created 0.7s
+ - Container selenium-hub             Creating 0.1s
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ - Network docker-validation_default      Created 0.7s
+ - Container selenium-hub                 Created 0.2s
+ - Container docker-validation-chrome-1   Creating 0.1s
+ - Container docker-validation-firefox-1  Creating 0.1s
+[?25h[1A[1A[1A[1A[1A[0G[?25l[34m[+] Running 4/4[0m
+ - Network docker-validation_default      Created 0.7s
+ - Container selenium-hub                 Created 0.2s
+ - Container docker-validation-chrome-1   Created 0.1s
+ - Container docker-validation-firefox-1  Created 0.1s
+[?25hAttaching to docker-validation-chrome-1, docker-validation-firefox-1, selenium-hub
+selenium-hub                 | 2024-03-10 13:04:36,172 INFO Included extra file "/etc/supervisor/conf.d/selenium-grid-hub.conf" during parsing
+selenium-hub                 | 2024-03-10 13:04:36,180 INFO RPC interface 'supervisor' initialized
+selenium-hub                 | 2024-03-10 13:04:36,180 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+selenium-hub                 | 2024-03-10 13:04:36,182 INFO supervisord started with pid 8
+selenium-hub                 | 2024-03-10 13:04:37,185 INFO spawned: 'selenium-grid-hub' with pid 9
+selenium-hub                 | Appending Selenium options: --reject-unsupported-caps false
+selenium-hub                 | 2024-03-10 13:04:37,192 INFO success: selenium-grid-hub entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+selenium-hub                 | Tracing is disabled
+selenium-hub                 | 13:04:38.033 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+selenium-hub                 | 13:04:38.047 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+selenium-hub                 | 13:04:38.257 INFO [BoundZmqEventBus.<init>] - XPUB binding to [binding to tcp://*:4442, advertising as tcp://172.18.0.2:4442], XSUB binding to [binding to tcp://*:4443, advertising as tcp://172.18.0.2:4443]
+docker-validation-firefox-1  | 2024-03-10 13:04:38,273 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+docker-validation-chrome-1   | 2024-03-10 13:04:38,275 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+docker-validation-firefox-1  | 2024-03-10 13:04:38,280 INFO RPC interface 'supervisor' initialized
+docker-validation-firefox-1  | 2024-03-10 13:04:38,281 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+docker-validation-firefox-1  | 2024-03-10 13:04:38,282 INFO supervisord started with pid 8
+docker-validation-chrome-1   | 2024-03-10 13:04:38,283 INFO RPC interface 'supervisor' initialized
+docker-validation-chrome-1   | 2024-03-10 13:04:38,283 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+docker-validation-chrome-1   | 2024-03-10 13:04:38,285 INFO supervisord started with pid 8
+selenium-hub                 | 13:04:38.369 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://172.18.0.2:4442 and tcp://172.18.0.2:4443
+selenium-hub                 | 13:04:38.410 INFO [UnboundZmqEventBus.<init>] - Sockets created
+docker-validation-firefox-1  | 2024-03-10 13:04:39,292 INFO spawned: 'xvfb' with pid 9
+docker-validation-firefox-1  | 2024-03-10 13:04:39,298 INFO spawned: 'vnc' with pid 10
+docker-validation-firefox-1  | 2024-03-10 13:04:39,301 INFO spawned: 'novnc' with pid 11
+docker-validation-firefox-1  | 2024-03-10 13:04:39,304 INFO spawned: 'selenium-node' with pid 14
+docker-validation-firefox-1  | 2024-03-10 13:04:39,312 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+docker-validation-chrome-1   | 2024-03-10 13:04:39,292 INFO spawned: 'xvfb' with pid 9
+docker-validation-chrome-1   | 2024-03-10 13:04:39,295 INFO spawned: 'vnc' with pid 10
+docker-validation-chrome-1   | 2024-03-10 13:04:39,297 INFO spawned: 'novnc' with pid 11
+docker-validation-chrome-1   | 2024-03-10 13:04:39,300 INFO spawned: 'selenium-node' with pid 12
+docker-validation-chrome-1   | 2024-03-10 13:04:39,318 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+selenium-hub                 | 13:04:39.414 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+docker-validation-firefox-1  | Appending Selenium options: --session-timeout 300
+docker-validation-firefox-1  | Appending Selenium options: --heartbeat-period 30
+docker-validation-firefox-1  | Generating Selenium Config
+docker-validation-chrome-1   | Appending Selenium options: --session-timeout 300
+docker-validation-chrome-1   | Appending Selenium options: --heartbeat-period 30
+docker-validation-chrome-1   | Generating Selenium Config
+docker-validation-firefox-1  | Configuring server...
+docker-validation-firefox-1  | Setting up SE_NODE_HOST...
+docker-validation-firefox-1  | Setting up SE_NODE_PORT...
+docker-validation-firefox-1  | Setting up SE_NODE_GRID_URL...
+docker-validation-chrome-1   | Configuring server...
+docker-validation-chrome-1   | Setting up SE_NODE_HOST...
+docker-validation-chrome-1   | Setting up SE_NODE_PORT...
+docker-validation-chrome-1   | Setting up SE_NODE_GRID_URL...
+docker-validation-firefox-1  | Tracing is disabled
+docker-validation-firefox-1  | Selenium Grid Node configuration: 
+docker-validation-firefox-1  | [events]
+docker-validation-firefox-1  | publish = "tcp://selenium-hub:4442"
+docker-validation-chrome-1   | Tracing is disabled
+docker-validation-chrome-1   | Selenium Grid Node configuration: 
+docker-validation-firefox-1  | subscribe = "tcp://selenium-hub:4443"
+docker-validation-firefox-1  | 
+docker-validation-firefox-1  | [node]
+docker-validation-firefox-1  | session-timeout = "300"
+docker-validation-firefox-1  | override-max-sessions = false
+docker-validation-firefox-1  | detect-drivers = false
+docker-validation-firefox-1  | drain-after-session-count = 0
+docker-validation-firefox-1  | max-sessions = 1
+docker-validation-firefox-1  | 
+docker-validation-firefox-1  | [[node.driver-configuration]]
+docker-validation-firefox-1  | display-name = "firefox"
+docker-validation-firefox-1  | stereotype = '{"browserName": "firefox", "browserVersion": "123.0", "platformName": "Linux", "moz:firefoxOptions": {"binary": "/usr/bin/firefox"}}'
+docker-validation-firefox-1  | max-sessions = 1
+docker-validation-firefox-1  | 
+docker-validation-firefox-1  | Starting Selenium Grid Node...
+docker-validation-chrome-1   | [events]
+docker-validation-chrome-1   | publish = "tcp://selenium-hub:4442"
+docker-validation-chrome-1   | subscribe = "tcp://selenium-hub:4443"
+docker-validation-chrome-1   | 
+docker-validation-chrome-1   | [node]
+docker-validation-chrome-1   | session-timeout = "300"
+docker-validation-chrome-1   | override-max-sessions = false
+docker-validation-chrome-1   | detect-drivers = false
+docker-validation-chrome-1   | drain-after-session-count = 0
+docker-validation-chrome-1   | max-sessions = 1
+docker-validation-chrome-1   | 
+docker-validation-chrome-1   | [[node.driver-configuration]]
+docker-validation-chrome-1   | display-name = "chrome"
+docker-validation-chrome-1   | stereotype = '{"browserName": "chrome", "browserVersion": "122.0", "platformName": "Linux", "goog:chromeOptions": {"binary": "/usr/bin/google-chrome"}}'
+docker-validation-chrome-1   | max-sessions = 1
+docker-validation-chrome-1   | 
+docker-validation-chrome-1   | Starting Selenium Grid Node...
+docker-validation-firefox-1  | 2024-03-10 13:04:40,348 INFO success: xvfb entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+docker-validation-firefox-1  | 2024-03-10 13:04:40,348 INFO success: vnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+docker-validation-firefox-1  | 2024-03-10 13:04:40,348 INFO success: novnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+docker-validation-chrome-1   | 2024-03-10 13:04:40,349 INFO success: xvfb entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+docker-validation-chrome-1   | 2024-03-10 13:04:40,350 INFO success: vnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+docker-validation-chrome-1   | 2024-03-10 13:04:40,350 INFO success: novnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+docker-validation-chrome-1   | 13:04:40.683 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+docker-validation-chrome-1   | 13:04:40.696 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+docker-validation-firefox-1  | 13:04:40.692 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+docker-validation-firefox-1  | 13:04:40.707 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+selenium-hub                 | 13:04:40.830 INFO [Hub.execute] - Started Selenium Hub 4.18.1 (revision b1d3319b48): http://172.18.0.2:4444
+docker-validation-chrome-1   | 13:04:40.935 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-hub:4442 and tcp://selenium-hub:4443
+docker-validation-firefox-1  | 13:04:40.946 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-hub:4442 and tcp://selenium-hub:4443
+docker-validation-chrome-1   | 13:04:41.045 INFO [UnboundZmqEventBus.<init>] - Sockets created
+docker-validation-firefox-1  | 13:04:41.048 INFO [UnboundZmqEventBus.<init>] - Sockets created
+docker-validation-chrome-1   | 13:04:42.051 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+docker-validation-firefox-1  | 13:04:42.053 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+docker-validation-chrome-1   | 13:04:42.305 INFO [NodeServer.createHandlers] - Reporting self as: http://172.18.0.3:5555
+docker-validation-firefox-1  | 13:04:42.334 INFO [NodeServer.createHandlers] - Reporting self as: http://172.18.0.4:5555
+docker-validation-chrome-1   | 13:04:42.343 INFO [NodeOptions.getSessionFactories] - Detected 16 available processors
+docker-validation-firefox-1  | 13:04:42.374 INFO [NodeOptions.getSessionFactories] - Detected 16 available processors
+docker-validation-chrome-1   | 13:04:42.446 INFO [NodeOptions.report] - Adding chrome for {"browserName": "chrome","browserVersion": "122.0","goog:chromeOptions": {"binary": "\u002fusr\u002fbin\u002fgoogle-chrome"},"platformName": "linux","se:noVncPort": 7900,"se:vncEnabled": true} 1 times
+docker-validation-firefox-1  | 13:04:42.481 INFO [NodeOptions.report] - Adding firefox for {"browserName": "firefox","browserVersion": "123.0","moz:firefoxOptions": {"binary": "\u002fusr\u002fbin\u002ffirefox"},"platformName": "linux","se:noVncPort": 7900,"se:vncEnabled": true} 1 times
+docker-validation-chrome-1   | 13:04:42.496 INFO [Node.<init>] - Binding additional locator mechanisms: relative
+docker-validation-firefox-1  | 13:04:42.524 INFO [Node.<init>] - Binding additional locator mechanisms: relative
+docker-validation-chrome-1   | 13:04:42.826 INFO [NodeServer$1.start] - Starting registration process for Node http://172.18.0.3:5555
+docker-validation-chrome-1   | 13:04:42.829 INFO [NodeServer.execute] - Started Selenium node 4.18.1 (revision b1d3319b48): http://172.18.0.3:5555
+docker-validation-chrome-1   | 13:04:42.857 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+docker-validation-firefox-1  | 13:04:42.864 INFO [NodeServer$1.start] - Starting registration process for Node http://172.18.0.4:5555
+docker-validation-firefox-1  | 13:04:42.867 INFO [NodeServer.execute] - Started Selenium node 4.18.1 (revision b1d3319b48): http://172.18.0.4:5555
+docker-validation-firefox-1  | 13:04:42.891 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+selenium-hub                 | 13:04:42.950 INFO [Node.<init>] - Binding additional locator mechanisms: relative
+selenium-hub                 | 13:04:43.709 INFO [GridModel.setAvailability] - Switching Node b6c48e5f-738f-44d6-97b5-7fc0ae32e0f9 (uri: http://172.18.0.3:5555) from DOWN to UP
+selenium-hub                 | 13:04:43.711 INFO [LocalDistributor.add] - Added node b6c48e5f-738f-44d6-97b5-7fc0ae32e0f9 at http://172.18.0.3:5555. Health check every 120s
+docker-validation-chrome-1   | 13:04:43.722 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+selenium-hub                 | 13:04:43.732 INFO [Node.<init>] - Binding additional locator mechanisms: relative
+selenium-hub                 | 13:04:44.007 INFO [GridModel.setAvailability] - Switching Node e7f6f65b-cab5-4e4c-b83d-e1b50865125a (uri: http://172.18.0.4:5555) from DOWN to UP
+selenium-hub                 | 13:04:44.008 INFO [LocalDistributor.add] - Added node e7f6f65b-cab5-4e4c-b83d-e1b50865125a at http://172.18.0.4:5555. Health check every 120s
+docker-validation-firefox-1  | 13:04:44.016 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+docker-validation-chrome-1   | Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+docker-validation-chrome-1   | 2024-03-10 13:04:44,724 WARN received SIGTERM indicating exit request
+docker-validation-chrome-1   | 2024-03-10 13:04:44,725 INFO waiting for xvfb, vnc, novnc, selenium-node to die
+docker-validation-chrome-1   | 2024-03-10 13:04:45,062 INFO stopped: selenium-node (terminated by SIGTERM)
+docker-validation-chrome-1   | 2024-03-10 13:04:46,064 INFO stopped: novnc (terminated by SIGTERM)
+docker-validation-chrome-1   | 2024-03-10 13:04:47,066 INFO stopped: vnc (terminated by SIGTERM)
+docker-validation-chrome-1   | 2024-03-10 13:04:48,069 INFO stopped: xvfb (terminated by SIGTERM)
+docker-validation-chrome-1   | Shutdown complete
+docker-validation-chrome-1 exited with code 143
+96024460179f_docker-validation-chrome-1 exited with code 0
+docker-validation-chrome-1               | 2024-03-10 13:04:50,620 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+docker-validation-chrome-1               | 2024-03-10 13:04:50,628 INFO RPC interface 'supervisor' initialized
+docker-validation-chrome-1               | 2024-03-10 13:04:50,628 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+docker-validation-chrome-1               | 2024-03-10 13:04:50,629 INFO supervisord started with pid 8
+docker-validation-chrome-1               | 2024-03-10 13:04:51,632 INFO spawned: 'xvfb' with pid 9
+docker-validation-chrome-1               | 2024-03-10 13:04:51,635 INFO spawned: 'vnc' with pid 10
+docker-validation-chrome-1               | 2024-03-10 13:04:51,638 INFO spawned: 'novnc' with pid 11
+docker-validation-chrome-1               | 2024-03-10 13:04:51,642 INFO spawned: 'selenium-node' with pid 12
+docker-validation-chrome-1               | 2024-03-10 13:04:51,653 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+docker-validation-chrome-2               | 2024-03-10 13:04:51,714 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+docker-validation-chrome-2               | 2024-03-10 13:04:51,721 INFO RPC interface 'supervisor' initialized
+docker-validation-chrome-2               | 2024-03-10 13:04:51,721 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+docker-validation-chrome-2               | 2024-03-10 13:04:51,722 INFO supervisord started with pid 8
+docker-validation-chrome-1               | Appending Selenium options: --session-timeout 300
+docker-validation-chrome-1               | Appending Selenium options: --heartbeat-period 30
+docker-validation-chrome-1               | Generating Selenium Config
+docker-validation-chrome-1               | Configuring server...
+docker-validation-chrome-1               | Setting up SE_NODE_HOST...
+docker-validation-chrome-1               | Setting up SE_NODE_PORT...
+docker-validation-chrome-1               | Setting up SE_NODE_GRID_URL...
+docker-validation-chrome-1               | Tracing is disabled
+docker-validation-chrome-1               | Selenium Grid Node configuration: 
+docker-validation-chrome-1               | [events]
+docker-validation-chrome-1               | publish = "tcp://selenium-hub:4442"
+docker-validation-chrome-1               | subscribe = "tcp://selenium-hub:4443"
+docker-validation-chrome-1               | 
+docker-validation-chrome-1               | [node]
+docker-validation-chrome-1               | session-timeout = "300"
+docker-validation-chrome-1               | override-max-sessions = false
+docker-validation-chrome-1               | detect-drivers = false
+docker-validation-chrome-1               | drain-after-session-count = 0
+docker-validation-chrome-1               | max-sessions = 1
+docker-validation-chrome-1               | 
+docker-validation-chrome-1               | [[node.driver-configuration]]
+docker-validation-chrome-1               | display-name = "chrome"
+docker-validation-chrome-1               | stereotype = '{"browserName": "chrome", "browserVersion": "122.0", "platformName": "Linux", "goog:chromeOptions": {"binary": "/usr/bin/google-chrome"}}'
+docker-validation-chrome-1               | max-sessions = 1
+docker-validation-chrome-1               | 
+docker-validation-chrome-1               | Starting Selenium Grid Node...
+docker-validation-chrome-1               | 2024-03-10 13:04:52,682 INFO success: xvfb entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+docker-validation-chrome-1               | 2024-03-10 13:04:52,682 INFO success: vnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+docker-validation-chrome-1               | 2024-03-10 13:04:52,682 INFO success: novnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+docker-validation-chrome-2               | 2024-03-10 13:04:52,726 INFO spawned: 'xvfb' with pid 9
+docker-validation-chrome-2               | 2024-03-10 13:04:52,730 INFO spawned: 'vnc' with pid 10
+docker-validation-chrome-2               | 2024-03-10 13:04:52,733 INFO spawned: 'novnc' with pid 11
+docker-validation-chrome-2               | 2024-03-10 13:04:52,739 INFO spawned: 'selenium-node' with pid 12
+docker-validation-chrome-2               | 2024-03-10 13:04:52,747 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+docker-validation-chrome-1               | 13:04:52.885 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+docker-validation-chrome-1               | 13:04:52.899 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+docker-validation-chrome-4               | 2024-03-10 13:04:53,086 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+docker-validation-chrome-4               | 2024-03-10 13:04:53,094 INFO RPC interface 'supervisor' initialized
+docker-validation-chrome-4               | 2024-03-10 13:04:53,095 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+docker-validation-chrome-4               | 2024-03-10 13:04:53,095 INFO supervisord started with pid 8
+docker-validation-chrome-1               | 13:04:53.130 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-hub:4442 and tcp://selenium-hub:4443
+docker-validation-chrome-2               | Appending Selenium options: --session-timeout 300
+docker-validation-chrome-2               | Appending Selenium options: --heartbeat-period 30
+docker-validation-chrome-2               | Generating Selenium Config
+docker-validation-chrome-2               | Configuring server...
+docker-validation-chrome-2               | Setting up SE_NODE_HOST...
+docker-validation-chrome-2               | Setting up SE_NODE_PORT...
+docker-validation-chrome-2               | Setting up SE_NODE_GRID_URL...
+docker-validation-chrome-2               | Tracing is disabled
+docker-validation-chrome-2               | Selenium Grid Node configuration: 
+docker-validation-chrome-2               | [events]
+docker-validation-chrome-2               | publish = "tcp://selenium-hub:4442"
+docker-validation-chrome-2               | subscribe = "tcp://selenium-hub:4443"
+docker-validation-chrome-2               | 
+docker-validation-chrome-2               | [node]
+docker-validation-chrome-2               | session-timeout = "300"
+docker-validation-chrome-2               | override-max-sessions = false
+docker-validation-chrome-2               | detect-drivers = false
+docker-validation-chrome-2               | drain-after-session-count = 0
+docker-validation-chrome-2               | max-sessions = 1
+docker-validation-chrome-2               | 
+docker-validation-chrome-2               | [[node.driver-configuration]]
+docker-validation-chrome-2               | display-name = "chrome"
+docker-validation-chrome-2               | stereotype = '{"browserName": "chrome", "browserVersion": "122.0", "platformName": "Linux", "goog:chromeOptions": {"binary": "/usr/bin/google-chrome"}}'
+docker-validation-chrome-2               | max-sessions = 1
+docker-validation-chrome-2               | 
+docker-validation-chrome-2               | Starting Selenium Grid Node...
+docker-validation-chrome-1               | 13:04:53.235 INFO [UnboundZmqEventBus.<init>] - Sockets created
+docker-validation-chrome-2               | 2024-03-10 13:04:53,777 INFO success: xvfb entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+docker-validation-chrome-2               | 2024-03-10 13:04:53,777 INFO success: vnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+docker-validation-chrome-2               | 2024-03-10 13:04:53,777 INFO success: novnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+docker-validation-chrome-2               | 13:04:53.932 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+docker-validation-chrome-2               | 13:04:53.943 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+docker-validation-chrome-4               | 2024-03-10 13:04:54,099 INFO spawned: 'xvfb' with pid 9
+docker-validation-chrome-4               | 2024-03-10 13:04:54,102 INFO spawned: 'vnc' with pid 10
+docker-validation-chrome-4               | 2024-03-10 13:04:54,105 INFO spawned: 'novnc' with pid 11
+docker-validation-chrome-4               | 2024-03-10 13:04:54,108 INFO spawned: 'selenium-node' with pid 12
+docker-validation-chrome-4               | 2024-03-10 13:04:54,114 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+docker-validation-chrome-2               | 13:04:54.158 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-hub:4442 and tcp://selenium-hub:4443
+docker-validation-chrome-1               | 13:04:54.241 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+docker-validation-chrome-2               | 13:04:54.301 INFO [UnboundZmqEventBus.<init>] - Sockets created
+docker-validation-chrome-4               | Appending Selenium options: --session-timeout 300
+docker-validation-chrome-4               | Appending Selenium options: --heartbeat-period 30
+docker-validation-chrome-4               | Generating Selenium Config
+docker-validation-chrome-4               | Configuring server...
+docker-validation-chrome-4               | Setting up SE_NODE_HOST...
+docker-validation-chrome-4               | Setting up SE_NODE_PORT...
+docker-validation-chrome-4               | Setting up SE_NODE_GRID_URL...
+docker-validation-chrome-4               | Tracing is disabled
+docker-validation-chrome-4               | Selenium Grid Node configuration: 
+docker-validation-chrome-4               | [events]
+docker-validation-chrome-4               | publish = "tcp://selenium-hub:4442"
+docker-validation-chrome-4               | subscribe = "tcp://selenium-hub:4443"
+docker-validation-chrome-4               | 
+docker-validation-chrome-4               | [node]
+docker-validation-chrome-4               | session-timeout = "300"
+docker-validation-chrome-4               | override-max-sessions = false
+docker-validation-chrome-4               | detect-drivers = false
+docker-validation-chrome-4               | drain-after-session-count = 0
+docker-validation-chrome-4               | max-sessions = 1
+docker-validation-chrome-4               | 
+docker-validation-chrome-4               | [[node.driver-configuration]]
+docker-validation-chrome-4               | display-name = "chrome"
+docker-validation-chrome-4               | stereotype = '{"browserName": "chrome", "browserVersion": "122.0", "platformName": "Linux", "goog:chromeOptions": {"binary": "/usr/bin/google-chrome"}}'
+docker-validation-chrome-4               | max-sessions = 1
+docker-validation-chrome-4               | 
+docker-validation-chrome-4               | Starting Selenium Grid Node...
+docker-validation-chrome-1               | 13:04:54.570 INFO [NodeServer.createHandlers] - Reporting self as: http://172.18.0.3:5555
+docker-validation-chrome-1               | 13:04:54.612 INFO [NodeOptions.getSessionFactories] - Detected 16 available processors
+docker-validation-chrome-3               | 2024-03-10 13:04:54,630 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+docker-validation-chrome-3               | 2024-03-10 13:04:54,641 INFO RPC interface 'supervisor' initialized
+docker-validation-chrome-3               | 2024-03-10 13:04:54,641 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+docker-validation-chrome-3               | 2024-03-10 13:04:54,643 INFO supervisord started with pid 8
+docker-validation-chrome-1               | 13:04:54.729 INFO [NodeOptions.report] - Adding chrome for {"browserName": "chrome","browserVersion": "122.0","goog:chromeOptions": {"binary": "\u002fusr\u002fbin\u002fgoogle-chrome"},"platformName": "linux","se:noVncPort": 7900,"se:vncEnabled": true} 1 times
+docker-validation-chrome-1               | 13:04:54.775 INFO [Node.<init>] - Binding additional locator mechanisms: relative
+docker-validation-chrome-1               | 13:04:55.050 INFO [NodeServer$1.start] - Starting registration process for Node http://172.18.0.3:5555
+docker-validation-chrome-1               | 13:04:55.054 INFO [NodeServer.execute] - Started Selenium node 4.18.1 (revision b1d3319b48): http://172.18.0.3:5555
+docker-validation-chrome-1               | 13:04:55.078 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+selenium-hub                             | 13:04:55.107 INFO [Node.<init>] - Binding additional locator mechanisms: relative
+docker-validation-chrome-4               | 2024-03-10 13:04:55,141 INFO success: xvfb entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+docker-validation-chrome-4               | 2024-03-10 13:04:55,141 INFO success: vnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+docker-validation-chrome-4               | 2024-03-10 13:04:55,141 INFO success: novnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+docker-validation-chrome-2               | 13:04:55.309 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+docker-validation-chrome-4               | 13:04:55.345 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+docker-validation-chrome-4               | 13:04:55.357 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+selenium-hub                             | 13:04:55.365 INFO [GridModel.add] - Re-adding node with id 65e07cb9-0671-48bb-8805-4f99660dceb4 and URI http://172.18.0.3:5555.
+selenium-hub                             | 13:04:55.372 INFO [GridModel.setAvailability] - Switching Node 65e07cb9-0671-48bb-8805-4f99660dceb4 (uri: http://172.18.0.3:5555) from DOWN to UP
+selenium-hub                             | 13:04:55.373 INFO [LocalDistributor.add] - Added node 65e07cb9-0671-48bb-8805-4f99660dceb4 at http://172.18.0.3:5555. Health check every 120s
+docker-validation-chrome-1               | 13:04:55.382 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+docker-validation-chrome-4               | 13:04:55.588 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-hub:4442 and tcp://selenium-hub:4443
+docker-validation-chrome-2               | 13:04:55.593 INFO [NodeServer.createHandlers] - Reporting self as: http://172.18.0.5:5555
+docker-validation-chrome-3               | 2024-03-10 13:04:55,646 INFO spawned: 'xvfb' with pid 9
+docker-validation-chrome-3               | 2024-03-10 13:04:55,649 INFO spawned: 'vnc' with pid 10
+docker-validation-chrome-3               | 2024-03-10 13:04:55,651 INFO spawned: 'novnc' with pid 11
+docker-validation-chrome-3               | 2024-03-10 13:04:55,654 INFO spawned: 'selenium-node' with pid 13
+docker-validation-chrome-3               | 2024-03-10 13:04:55,660 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+docker-validation-chrome-4               | 13:04:55.687 INFO [UnboundZmqEventBus.<init>] - Sockets created
+docker-validation-chrome-2               | 13:04:55.732 INFO [NodeOptions.getSessionFactories] - Detected 16 available processors
+docker-validation-chrome-2               | 13:04:55.860 INFO [NodeOptions.report] - Adding chrome for {"browserName": "chrome","browserVersion": "122.0","goog:chromeOptions": {"binary": "\u002fusr\u002fbin\u002fgoogle-chrome"},"platformName": "linux","se:noVncPort": 7900,"se:vncEnabled": true} 1 times
+docker-validation-chrome-2               | 13:04:55.905 INFO [Node.<init>] - Binding additional locator mechanisms: relative
+docker-validation-chrome-3               | Appending Selenium options: --session-timeout 300
+docker-validation-chrome-3               | Appending Selenium options: --heartbeat-period 30
+docker-validation-chrome-3               | Generating Selenium Config
+docker-validation-chrome-3               | Configuring server...
+docker-validation-chrome-3               | Setting up SE_NODE_HOST...
+docker-validation-chrome-3               | Setting up SE_NODE_PORT...
+docker-validation-chrome-3               | Setting up SE_NODE_GRID_URL...
+docker-validation-chrome-3               | Tracing is disabled
+docker-validation-chrome-3               | Selenium Grid Node configuration: 
+docker-validation-chrome-3               | [events]
+docker-validation-chrome-3               | publish = "tcp://selenium-hub:4442"
+docker-validation-chrome-3               | subscribe = "tcp://selenium-hub:4443"
+docker-validation-chrome-3               | 
+docker-validation-chrome-3               | [node]
+docker-validation-chrome-3               | session-timeout = "300"
+docker-validation-chrome-3               | override-max-sessions = false
+docker-validation-chrome-3               | detect-drivers = false
+docker-validation-chrome-3               | drain-after-session-count = 0
+docker-validation-chrome-3               | max-sessions = 1
+docker-validation-chrome-3               | 
+docker-validation-chrome-3               | [[node.driver-configuration]]
+docker-validation-chrome-3               | display-name = "chrome"
+docker-validation-chrome-3               | stereotype = '{"browserName": "chrome", "browserVersion": "122.0", "platformName": "Linux", "goog:chromeOptions": {"binary": "/usr/bin/google-chrome"}}'
+docker-validation-chrome-3               | max-sessions = 1
+docker-validation-chrome-3               | 
+docker-validation-chrome-3               | Starting Selenium Grid Node...
+docker-validation-chrome-5               | 2024-03-10 13:04:56,173 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+docker-validation-chrome-5               | 2024-03-10 13:04:56,180 INFO RPC interface 'supervisor' initialized
+docker-validation-chrome-5               | 2024-03-10 13:04:56,180 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+docker-validation-chrome-5               | 2024-03-10 13:04:56,181 INFO supervisord started with pid 8
+docker-validation-chrome-2               | 13:04:56.239 INFO [NodeServer$1.start] - Starting registration process for Node http://172.18.0.5:5555
+docker-validation-chrome-2               | 13:04:56.241 INFO [NodeServer.execute] - Started Selenium node 4.18.1 (revision b1d3319b48): http://172.18.0.5:5555
+docker-validation-chrome-2               | 13:04:56.265 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+selenium-hub                             | 13:04:56.279 INFO [Node.<init>] - Binding additional locator mechanisms: relative
+selenium-hub                             | 13:04:56.512 INFO [GridModel.setAvailability] - Switching Node ffe70571-ea01-4b8c-aa06-159cac871da5 (uri: http://172.18.0.5:5555) from DOWN to UP
+selenium-hub                             | 13:04:56.513 INFO [LocalDistributor.add] - Added node ffe70571-ea01-4b8c-aa06-159cac871da5 at http://172.18.0.5:5555. Health check every 120s
+docker-validation-chrome-2               | 13:04:56.524 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+docker-validation-chrome-4               | 13:04:56.692 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+docker-validation-chrome-3               | 2024-03-10 13:04:56,706 INFO success: xvfb entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+docker-validation-chrome-3               | 2024-03-10 13:04:56,706 INFO success: vnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+docker-validation-chrome-3               | 2024-03-10 13:04:56,706 INFO success: novnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+docker-validation-chrome-3               | 13:04:56.863 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+docker-validation-chrome-3               | 13:04:56.878 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+docker-validation-chrome-4               | 13:04:56.937 INFO [NodeServer.createHandlers] - Reporting self as: http://172.18.0.6:5555
+docker-validation-chrome-4               | 13:04:56.985 INFO [NodeOptions.getSessionFactories] - Detected 16 available processors
+docker-validation-chrome-4               | 13:04:57.095 INFO [NodeOptions.report] - Adding chrome for {"browserName": "chrome","browserVersion": "122.0","goog:chromeOptions": {"binary": "\u002fusr\u002fbin\u002fgoogle-chrome"},"platformName": "linux","se:noVncPort": 7900,"se:vncEnabled": true} 1 times
+docker-validation-chrome-3               | 13:04:57.142 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-hub:4442 and tcp://selenium-hub:4443
+docker-validation-chrome-4               | 13:04:57.144 INFO [Node.<init>] - Binding additional locator mechanisms: relative
+docker-validation-chrome-5               | 2024-03-10 13:04:57,186 INFO spawned: 'xvfb' with pid 9
+docker-validation-chrome-5               | 2024-03-10 13:04:57,190 INFO spawned: 'vnc' with pid 10
+docker-validation-chrome-5               | 2024-03-10 13:04:57,195 INFO spawned: 'novnc' with pid 11
+docker-validation-chrome-5               | 2024-03-10 13:04:57,201 INFO spawned: 'selenium-node' with pid 13
+docker-validation-chrome-5               | 2024-03-10 13:04:57,213 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+docker-validation-chrome-3               | 13:04:57.271 INFO [UnboundZmqEventBus.<init>] - Sockets created
+docker-validation-chrome-4               | 13:04:57.614 INFO [NodeServer$1.start] - Starting registration process for Node http://172.18.0.6:5555
+docker-validation-chrome-4               | 13:04:57.619 INFO [NodeServer.execute] - Started Selenium node 4.18.1 (revision b1d3319b48): http://172.18.0.6:5555
+docker-validation-chrome-4               | 13:04:57.656 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+selenium-hub                             | 13:04:57.671 INFO [Node.<init>] - Binding additional locator mechanisms: relative
+docker-validation-chrome-5               | Appending Selenium options: --session-timeout 300
+docker-validation-chrome-5               | Appending Selenium options: --heartbeat-period 30
+docker-validation-chrome-5               | Generating Selenium Config
+docker-validation-chrome-5               | Configuring server...
+docker-validation-chrome-5               | Setting up SE_NODE_HOST...
+docker-validation-chrome-5               | Setting up SE_NODE_PORT...
+docker-validation-chrome-5               | Setting up SE_NODE_GRID_URL...
+docker-validation-chrome-5               | Tracing is disabled
+docker-validation-chrome-5               | Selenium Grid Node configuration: 
+docker-validation-chrome-5               | [events]
+docker-validation-chrome-5               | publish = "tcp://selenium-hub:4442"
+docker-validation-chrome-5               | subscribe = "tcp://selenium-hub:4443"
+docker-validation-chrome-5               | 
+docker-validation-chrome-5               | [node]
+docker-validation-chrome-5               | session-timeout = "300"
+docker-validation-chrome-5               | override-max-sessions = false
+docker-validation-chrome-5               | detect-drivers = false
+docker-validation-chrome-5               | drain-after-session-count = 0
+docker-validation-chrome-5               | max-sessions = 1
+docker-validation-chrome-5               | 
+docker-validation-chrome-5               | [[node.driver-configuration]]
+docker-validation-chrome-5               | display-name = "chrome"
+docker-validation-chrome-5               | stereotype = '{"browserName": "chrome", "browserVersion": "122.0", "platformName": "Linux", "goog:chromeOptions": {"binary": "/usr/bin/google-chrome"}}'
+docker-validation-chrome-5               | max-sessions = 1
+docker-validation-chrome-5               | 
+docker-validation-chrome-5               | Starting Selenium Grid Node...
+selenium-hub                             | 13:04:58.118 INFO [GridModel.setAvailability] - Switching Node c6f08b32-dcf1-40bc-a67f-8d98e2d9fc86 (uri: http://172.18.0.6:5555) from DOWN to UP
+selenium-hub                             | 13:04:58.119 INFO [LocalDistributor.add] - Added node c6f08b32-dcf1-40bc-a67f-8d98e2d9fc86 at http://172.18.0.6:5555. Health check every 120s
+docker-validation-chrome-4               | 13:04:58.129 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+docker-validation-chrome-5               | 2024-03-10 13:04:58,249 INFO success: xvfb entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+docker-validation-chrome-5               | 2024-03-10 13:04:58,253 INFO success: vnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+docker-validation-chrome-5               | 2024-03-10 13:04:58,253 INFO success: novnc entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+docker-validation-chrome-3               | 13:04:58.280 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+docker-validation-chrome-3               | 13:04:58.580 INFO [NodeServer.createHandlers] - Reporting self as: http://172.18.0.7:5555
+docker-validation-chrome-3               | 13:04:58.616 INFO [NodeOptions.getSessionFactories] - Detected 16 available processors
+docker-validation-chrome-3               | 13:04:58.725 INFO [NodeOptions.report] - Adding chrome for {"browserName": "chrome","browserVersion": "122.0","goog:chromeOptions": {"binary": "\u002fusr\u002fbin\u002fgoogle-chrome"},"platformName": "linux","se:noVncPort": 7900,"se:vncEnabled": true} 1 times
+docker-validation-chrome-3               | 13:04:58.791 INFO [Node.<init>] - Binding additional locator mechanisms: relative
+docker-validation-chrome-5               | 13:04:58.912 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+docker-validation-chrome-5               | 13:04:58.927 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+docker-validation-chrome-5               | 13:04:59.304 INFO [UnboundZmqEventBus.<init>] - Connecting to tcp://selenium-hub:4442 and tcp://selenium-hub:4443
+docker-validation-chrome-3               | 13:04:59.308 INFO [NodeServer$1.start] - Starting registration process for Node http://172.18.0.7:5555
+docker-validation-chrome-3               | 13:04:59.311 INFO [NodeServer.execute] - Started Selenium node 4.18.1 (revision b1d3319b48): http://172.18.0.7:5555
+docker-validation-chrome-3               | 13:04:59.345 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+selenium-hub                             | 13:04:59.360 INFO [Node.<init>] - Binding additional locator mechanisms: relative
+docker-validation-chrome-5               | 13:04:59.554 INFO [UnboundZmqEventBus.<init>] - Sockets created
+selenium-hub                             | 13:05:00.080 INFO [GridModel.setAvailability] - Switching Node d5c030d0-5f75-47c4-81cc-f9bead1e28b7 (uri: http://172.18.0.7:5555) from DOWN to UP
+selenium-hub                             | 13:05:00.080 INFO [LocalDistributor.add] - Added node d5c030d0-5f75-47c4-81cc-f9bead1e28b7 at http://172.18.0.7:5555. Health check every 120s
+docker-validation-chrome-3               | 13:05:00.093 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+selenium-hub                             | 13:05:00.298 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+selenium-hub                             |  [Capabilities {browserName: chrome}]
+selenium-hub                             | 13:05:00.298 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+selenium-hub                             |  [Capabilities {browserName: chrome}]
+selenium-hub                             | 13:05:00.298 INFO [LocalDistributor.newSession] - Session request received by the Distributor: 
+selenium-hub                             |  [Capabilities {browserName: chrome}]
+docker-validation-chrome-5               | 13:05:00.579 INFO [UnboundZmqEventBus.<init>] - Event bus ready
+docker-validation-chrome-5               | 13:05:01.041 INFO [NodeServer.createHandlers] - Reporting self as: http://172.18.0.8:5555
+docker-validation-chrome-5               | 13:05:01.082 INFO [NodeOptions.getSessionFactories] - Detected 16 available processors
+docker-validation-chrome-5               | 13:05:01.204 INFO [NodeOptions.report] - Adding chrome for {"browserName": "chrome","browserVersion": "122.0","goog:chromeOptions": {"binary": "\u002fusr\u002fbin\u002fgoogle-chrome"},"platformName": "linux","se:noVncPort": 7900,"se:vncEnabled": true} 1 times
+docker-validation-chrome-5               | 13:05:01.269 INFO [Node.<init>] - Binding additional locator mechanisms: relative
+docker-validation-chrome-5               | 13:05:01.780 INFO [NodeServer$1.start] - Starting registration process for Node http://172.18.0.8:5555
+docker-validation-chrome-5               | 13:05:01.783 INFO [NodeServer.execute] - Started Selenium node 4.18.1 (revision b1d3319b48): http://172.18.0.8:5555
+docker-validation-chrome-5               | 13:05:01.828 INFO [NodeServer$1.lambda$start$1] - Sending registration event...
+selenium-hub                             | 13:05:01.846 INFO [Node.<init>] - Binding additional locator mechanisms: relative
+selenium-hub                             | 13:05:02.278 INFO [GridModel.setAvailability] - Switching Node 082fe29d-2ccb-41d0-a00e-01b89ad74c89 (uri: http://172.18.0.8:5555) from DOWN to UP
+selenium-hub                             | 13:05:02.279 INFO [LocalDistributor.add] - Added node 082fe29d-2ccb-41d0-a00e-01b89ad74c89 at http://172.18.0.8:5555. Health check every 120s
+docker-validation-chrome-5               | 13:05:02.294 INFO [NodeServer.lambda$createHandlers$2] - Node has been added
+docker-validation-chrome-4               | 13:05:03.587 INFO [LocalNode.newSession] - Session created by the Node. Id: 10131288ae231a4327a1581cdc9af365, Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37117}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.6:4444/sessio..., se:cdpVersion: 122.0.6261.69, se:vnc: ws://172.18.0.6:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.6:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+docker-validation-chrome-3               | 13:05:03.590 INFO [LocalNode.newSession] - Session created by the Node. Id: c81621f81c87cc23ffbf617594df0d10, Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43887}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.7:4444/sessio..., se:cdpVersion: 122.0.6261.69, se:vnc: ws://172.18.0.7:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.7:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+docker-validation-chrome-2               | 13:05:03.599 INFO [LocalNode.newSession] - Session created by the Node. Id: 6ccdee1230df255daefbb0ae110d92b1, Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40125}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.5:4444/sessio..., se:cdpVersion: 122.0.6261.69, se:vnc: ws://172.18.0.5:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+selenium-hub                             | 13:05:03.637 INFO [LocalDistributor.newSession] - Session created by the Distributor. Id: c81621f81c87cc23ffbf617594df0d10 
+selenium-hub                             |  Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43887}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: {}, se:bidiEnabled: false, se:cdp: ws://172.18.0.7:4444/sessio..., se:cdpVersion: 122.0.6261.69, se:vnc: ws://172.18.0.7:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.7:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+selenium-hub                             | 13:05:03.637 INFO [LocalDistributor.newSession] - Session created by the Distributor. Id: 6ccdee1230df255daefbb0ae110d92b1 
+selenium-hub                             |  Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40125}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: {}, se:bidiEnabled: false, se:cdp: ws://172.18.0.5:4444/sessio..., se:cdpVersion: 122.0.6261.69, se:vnc: ws://172.18.0.5:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+selenium-hub                             | 13:05:03.637 INFO [LocalDistributor.newSession] - Session created by the Distributor. Id: 10131288ae231a4327a1581cdc9af365 
+selenium-hub                             |  Caps: Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37117}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: {}, se:bidiEnabled: false, se:cdp: ws://172.18.0.6:4444/sessio..., se:cdpVersion: 122.0.6261.69, se:vnc: ws://172.18.0.6:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.6:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+docker-validation-firefox-1              | Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+docker-validation-chrome-2               | Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+docker-validation-chrome-3               | Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+docker-validation-chrome-4               | Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+docker-validation-chrome-5               | Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+docker-validation-chrome-1               | Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+docker-validation-firefox-1              | 2024-03-10 13:05:37,088 WARN received SIGTERM indicating exit request
+docker-validation-firefox-1              | 2024-03-10 13:05:37,089 INFO waiting for xvfb, vnc, novnc, selenium-node to die
+docker-validation-chrome-5               | 2024-03-10 13:05:37,340 WARN received SIGTERM indicating exit request
+docker-validation-chrome-5               | 2024-03-10 13:05:37,341 INFO waiting for xvfb, vnc, novnc, selenium-node to die
+docker-validation-firefox-1              | 2024-03-10 13:05:37,425 INFO stopped: selenium-node (terminated by SIGTERM)
+docker-validation-chrome-1               | 2024-03-10 13:05:37,439 WARN received SIGTERM indicating exit request
+docker-validation-chrome-1               | 2024-03-10 13:05:37,440 INFO waiting for xvfb, vnc, novnc, selenium-node to die
+docker-validation-chrome-4               | 2024-03-10 13:05:37,642 WARN received SIGTERM indicating exit request
+docker-validation-chrome-3               | 2024-03-10 13:05:37,642 WARN received SIGTERM indicating exit request
+docker-validation-chrome-2               | 2024-03-10 13:05:37,644 WARN received SIGTERM indicating exit request
+docker-validation-chrome-2               | 2024-03-10 13:05:37,649 INFO waiting for xvfb, vnc, novnc, selenium-node to die
+docker-validation-chrome-3               | 2024-03-10 13:05:37,649 INFO waiting for xvfb, vnc, novnc, selenium-node to die
+docker-validation-chrome-4               | 2024-03-10 13:05:37,655 INFO waiting for xvfb, vnc, novnc, selenium-node to die
+docker-validation-chrome-3               | 13:05:37.675 INFO [LocalNode.stopAllSessions] - Trying to stop all running sessions before shutting down...
+docker-validation-chrome-3               | 2024-03-10 13:05:37,676 INFO stopped: selenium-node (terminated by SIGTERM)
+docker-validation-chrome-5               | 2024-03-10 13:05:37,690 INFO stopped: selenium-node (terminated by SIGTERM)
+docker-validation-chrome-4               | 13:05:37.699 INFO [LocalNode.stopAllSessions] - Trying to stop all running sessions before shutting down...
+docker-validation-chrome-4               | 2024-03-10 13:05:37,702 INFO stopped: selenium-node (terminated by SIGTERM)
+docker-validation-chrome-4               | 2024-03-10 13:05:37,704 INFO stopped: novnc (terminated by SIGTERM)
+selenium-hub                             | 13:05:37.731 INFO [LocalSessionMap.lambda$new$0] - Deleted session from local Session Map, Id: c81621f81c87cc23ffbf617594df0d10
+selenium-hub                             | 13:05:37.738 INFO [LocalSessionMap.lambda$new$0] - Deleted session from local Session Map, Id: 10131288ae231a4327a1581cdc9af365
+selenium-hub                             | 13:05:37.738 INFO [GridModel.release] - Releasing slot for session id c81621f81c87cc23ffbf617594df0d10
+selenium-hub                             | 13:05:37.739 INFO [GridModel.release] - Releasing slot for session id 10131288ae231a4327a1581cdc9af365
+selenium-hub                             | 13:05:37.740 INFO [GridModel.release] - Releasing slot for session id 6ccdee1230df255daefbb0ae110d92b1
+selenium-hub                             | 13:05:37.740 INFO [LocalSessionMap.lambda$new$0] - Deleted session from local Session Map, Id: 6ccdee1230df255daefbb0ae110d92b1
+docker-validation-chrome-1               | 2024-03-10 13:05:37,783 INFO stopped: selenium-node (terminated by SIGTERM)
+docker-validation-chrome-2               | 2024-03-10 13:05:38,081 INFO stopped: selenium-node (terminated by SIGTERM)
+docker-validation-firefox-1              | 2024-03-10 13:05:38,427 INFO stopped: novnc (terminated by SIGTERM)
+docker-validation-chrome-3               | 2024-03-10 13:05:38,679 INFO stopped: novnc (terminated by SIGTERM)
+docker-validation-chrome-5               | 2024-03-10 13:05:38,693 INFO stopped: novnc (terminated by SIGTERM)
+docker-validation-chrome-4               | 2024-03-10 13:05:38,706 INFO stopped: vnc (terminated by SIGTERM)
+docker-validation-chrome-1               | 2024-03-10 13:05:38,785 INFO stopped: novnc (terminated by SIGTERM)
+docker-validation-chrome-2               | 2024-03-10 13:05:39,084 INFO stopped: novnc (terminated by SIGTERM)
+docker-validation-firefox-1              | 2024-03-10 13:05:39,430 INFO stopped: vnc (terminated by SIGTERM)
+docker-validation-chrome-3               | 2024-03-10 13:05:39,682 INFO stopped: vnc (terminated by SIGTERM)
+docker-validation-chrome-5               | 2024-03-10 13:05:39,696 INFO stopped: vnc (terminated by SIGTERM)
+docker-validation-chrome-4               | 2024-03-10 13:05:39,708 INFO stopped: xvfb (terminated by SIGTERM)
+docker-validation-chrome-4               | Shutdown complete
+docker-validation-chrome-1               | 2024-03-10 13:05:39,788 INFO stopped: vnc (terminated by SIGTERM)
+failed to get console mode for stdout: The handle is invalid.
+failed to get console mode for stdout: The handle is invalid.
+[1A[1B[0G[?25l[+] Running 0/0
+ - Container docker-validation-firefox-1  Stopping 0.1s
+ - Container docker-validation-chrome-5   Stopping 0.1s
+ - Container docker-validation-chrome-1   Stopping 0.1s
+ - Container docker-validation-chrome-4   Stopping 0.1s
+ - Container docker-validation-chrome-2   Stopping 0.1s
+ - Container docker-validation-chrome-3   Stopping 0.1s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 0/6
+ - Container docker-validation-firefox-1  Stopping 0.2s
+ - Container docker-validation-chrome-5   Stopping 0.2s
+ - Container docker-validation-chrome-1   Stopping 0.2s
+ - Container docker-validation-chrome-4   Stopping 0.2s
+ - Container docker-validation-chrome-2   Stopping 0.2s
+ - Container docker-validation-chrome-3   Stopping 0.2s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 1/6
+ - Container docker-validation-firefox-1  Stopping 0.3s
+ - Container docker-validation-chrome-5   Stopping 0.3s
+ - Container docker-validation-chrome-1   Stopping 0.3s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 0.3s
+ - Container docker-validation-chrome-3   Stopping 0.3s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 1/6
+ - Container docker-validation-firefox-1  Stopping 0.4s
+ - Container docker-validation-chrome-5   Stopping 0.4s
+ - Container docker-validation-chrome-1   Stopping 0.4s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 0.4s
+ - Container docker-validation-chrome-3   Stopping 0.4s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 1/6
+ - Container docker-validation-firefox-1  Stopping 0.5s
+ - Container docker-validation-chrome-5   Stopping 0.5s
+ - Container docker-validation-chrome-1   Stopping 0.5s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 0.5s
+ - Container docker-validation-chrome-3   Stopping 0.5s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 1/6
+ - Container docker-validation-firefox-1  Stopping 0.6s
+ - Container docker-validation-chrome-5   Stopping 0.6s
+ - Container docker-validation-chrome-1   Stopping 0.6s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 0.6s
+ - Container docker-validation-chrome-3   Stopping 0.6s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 1/6
+ - Container docker-validation-firefox-1  Stopping 0.7s
+ - Container docker-validation-chrome-5   Stopping 0.7s
+ - Container docker-validation-chrome-1   Stopping 0.7s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 0.7s
+ - Container docker-validation-chrome-3   Stopping 0.7s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 1/6
+ - Container docker-validation-firefox-1  Stopping 0.8s
+ - Container docker-validation-chrome-5   Stopping 0.8s
+ - Container docker-validation-chrome-1   Stopping 0.8s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 0.8s
+ - Container docker-validation-chrome-3   Stopping 0.8s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 1/6
+ - Container docker-validation-firefox-1  Stopping 0.9s
+ - Container docker-validation-chrome-5   Stopping 0.9s
+ - Container docker-validation-chrome-1   Stopping 0.9s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 0.9s
+ - Container docker-validation-chrome-3   Stopping 0.9s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 1/6
+ - Container docker-validation-firefox-1  Stopping 1.0s
+ - Container docker-validation-chrome-5   Stopping 1.0s
+ - Container docker-validation-chrome-1   Stopping 1.0s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 1.0s
+ - Container docker-validation-chrome-3   Stopping 1.0s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 1/6
+ - Container docker-validation-firefox-1  Stopping 1.1s
+ - Container docker-validation-chrome-5   Stopping 1.1s
+ - Container docker-validation-chrome-1   Stopping 1.1s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 1.1s
+ - Container docker-validation-chrome-3   Stopping 1.1s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 1/6
+ - Container docker-validation-firefox-1  Stopping 1.2s
+ - Container docker-validation-chrome-5   Stopping 1.2s
+ - Container docker-validation-chrome-1   Stopping 1.2s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 1.2s
+ - Container docker-validation-chrome-3   Stopping 1.2s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 1/6
+ - Container docker-validation-firefox-1  Stopping 1.3s
+ - Container docker-validation-chrome-5   Stopping 1.3s
+ - Container docker-validation-chrome-1   Stopping 1.3s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 1.3s
+ - Container docker-validation-chrome-3   Stopping 1.3s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 1/6
+ - Container docker-validation-firefox-1  Stopping 1.4s
+ - Container docker-validation-chrome-5   Stopping 1.4s
+ - Container docker-validation-chrome-1   Stopping 1.4s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 1.4s
+ - Container docker-validation-chrome-3   Stopping 1.4s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 1/6
+ - Container docker-validation-firefox-1  Stopping 1.5s
+ - Container docker-validation-chrome-5   Stopping 1.5s
+ - Container docker-validation-chrome-1   Stopping 1.5s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 1.5s
+ - Container docker-validation-chrome-3   Stopping 1.5s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 1/6
+ - Container docker-validation-firefox-1  Stopping 1.6s
+ - Container docker-validation-chrome-5   Stopping 1.6s
+ - Container docker-validation-chrome-1   Stopping 1.6s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 1.6s
+ - Container docker-validation-chrome-3   Stopping 1.6s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 1/6
+ - Container docker-validation-firefox-1  Stopping 1.7s
+ - Container docker-validation-chrome-5   Stopping 1.7s
+ - Container docker-validation-chrome-1   Stopping 1.7s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 1.7s
+ - Container docker-validation-chrome-3   Stopping 1.7s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 1/6
+ - Container docker-validation-firefox-1  Stopping 1.8s
+ - Container docker-validation-chrome-5   Stopping 1.8s
+ - Container docker-validation-chrome-1   Stopping 1.8s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 1.8s
+ - Container docker-validation-chrome-3   Stopping 1.8s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 2/6
+ - Container docker-validation-firefox-1  Stopped 1.8s
+ - Container docker-validation-chrome-5   Stopping 1.9s
+ - Container docker-validation-chrome-1   Stopping 1.9s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 1.9s
+ - Container docker-validation-chrome-3   Stopping 1.9s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 2/6
+ - Container docker-validation-firefox-1  Stopped 1.8s
+ - Container docker-validation-chrome-5   Stopping 2.0s
+ - Container docker-validation-chrome-1   Stopping 2.0s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 2.0s
+ - Container docker-validation-chrome-3   Stopping 2.0s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 2/6
+ - Container docker-validation-firefox-1  Stopped 1.8s
+ - Container docker-validation-chrome-5   Stopping 2.1s
+ - Container docker-validation-chrome-1   Stopping 2.1s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 2.1s
+ - Container docker-validation-chrome-3   Stopping 2.1s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 2/6
+ - Container docker-validation-firefox-1  Stopped 1.8s
+ - Container docker-validation-chrome-5   Stopping 2.2s
+ - Container docker-validation-chrome-1   Stopping 2.2s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 2.2s
+ - Container docker-validation-chrome-3   Stopping 2.2s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 2/6
+ - Container docker-validation-firefox-1  Stopped 1.8s
+ - Container docker-validation-chrome-5   Stopping 2.3s
+ - Container docker-validation-chrome-1   Stopping 2.3s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 2.3s
+ - Container docker-validation-chrome-3   Stopping 2.3s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 2/6
+ - Container docker-validation-firefox-1  Stopped 1.8s
+ - Container docker-validation-chrome-5   Stopping 2.4s
+ - Container docker-validation-chrome-1   Stopping 2.4s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 2.4s
+ - Container docker-validation-chrome-3   Stopping 2.4s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 3/6
+ - Container docker-validation-firefox-1  Stopped 1.8s
+ - Container docker-validation-chrome-5   Stopped 2.4s
+ - Container docker-validation-chrome-1   Stopping 2.5s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 2.5s
+ - Container docker-validation-chrome-3   Stopping 2.5s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 4/6
+ - Container docker-validation-firefox-1  Stopped 1.8s
+ - Container docker-validation-chrome-5   Stopped 2.4s
+ - Container docker-validation-chrome-1   Stopping 2.6s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 2.6s
+ - Container docker-validation-chrome-3   Stopped 2.6s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 4/6
+ - Container docker-validation-firefox-1  Stopped 1.8s
+ - Container docker-validation-chrome-5   Stopped 2.4s
+ - Container docker-validation-chrome-1   Stopping 2.7s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 2.7s
+ - Container docker-validation-chrome-3   Stopped 2.6s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 5/6
+ - Container docker-validation-firefox-1  Stopped 1.8s
+ - Container docker-validation-chrome-5   Stopped 2.4s
+ - Container docker-validation-chrome-1   Stopped 2.8s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 2.8s
+ - Container docker-validation-chrome-3   Stopped 2.6s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 5/6
+ - Container docker-validation-firefox-1  Stopped 1.8s
+ - Container docker-validation-chrome-5   Stopped 2.4s
+ - Container docker-validation-chrome-1   Stopped 2.8s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 2.9s
+ - Container docker-validation-chrome-3   Stopped 2.6s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Running 5/6
+ - Container docker-validation-firefox-1  Stopped 1.8s
+ - Container docker-validation-chrome-5   Stopped 2.4s
+ - Container docker-validation-chrome-1   Stopped 2.8s
+ - Container docker-validation-chrome-4   Stopped 0.3s
+ - Container docker-validation-chrome-2   Stopping 3.0s
+ - Container docker-validation-chrome-3   Stopped 2.6s
+[?25h
